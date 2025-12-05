@@ -1,3 +1,5 @@
+import "package:clinical_trial_tracker/manage_participant_screens/select_participant_screen.dart";
+import "package:clinical_trial_tracker/new_participant_screen/new_participant_screen.dart";
 import "package:flutter/material.dart";
 import "package:forui/forui.dart";
 
@@ -27,7 +29,14 @@ class HomeScreen extends StatelessWidget {
         SizedBox(
           height: 60,
           child: FButton(
-            onPress: () {},
+            onPress: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const NewParticipantScreen(),
+                ),
+              );
+            },
             style: FButtonStyle.primary(),
             child: const Text("Add New Participant"),
           ),
@@ -38,7 +47,14 @@ class HomeScreen extends StatelessWidget {
         SizedBox(
           height: 60,
           child: FButton(
-            onPress: () {},
+            onPress: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SelectParticipantScreen(),
+                ),
+              );
+            },
             style: FButtonStyle.primary(),
             child: const Text("Manage Current Participant"),
           ),

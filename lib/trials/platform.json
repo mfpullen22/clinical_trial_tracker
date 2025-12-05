@@ -1,0 +1,610 @@
+{"platform": {
+    "name": "PLATFORM-CM Trial",
+    "description": "Platform trial for cryptococcal meningitis",
+    "status": "active",
+    "totalTimepoints": 14,
+    "categories": [
+        "Procedures",
+        "Clinical Labs",
+        "Research Labs"
+    ],
+    "timepoints": {
+        "screening": {
+            "order": 0,
+            "label": "Screening",
+            "days": -7,
+            "bloodVolume": "0",
+            "tasks": [
+                {
+                    "taskId": "assessEligibility",
+                    "order": 0,
+                    "label": "Assess Eligibility Criteria",
+                    "required": true,
+                    "category": "Procedures"
+                },
+                {
+                    "taskId": "reviewHistory",
+                    "order": 1,
+                    "label": "Review of Medical History",
+                    "required": true,
+                    "category": "Procedures"
+                },
+                {
+                    "taskId": "csfCollection",
+                    "order": 2,
+                    "label": "CSF Collection and Storage",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "If CSF cultures are sterile from ≥7 days prior (i.e. culture obtained on day 3 is sterile on day 10), lumbar punctures may be deferred at day 10. Participants may be discharged from the hospital after ≥10 days, if ambulatory and clinically stable."
+                }
+            ]
+        },
+        "enrollment": {
+            "order": 1,
+            "label": "Day 1 - Enrollment",
+            "days": 1,
+            "bloodVolume": "16",
+            "tasks": [
+                {
+                    "taskId": "consent",
+                    "order": 0,
+                    "label": "Signed Consent Form",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessEligibility",
+                    "order": 1,
+                    "label": "Assess Eligibility Criteria",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "reviewHistory",
+                    "order": 2,
+                    "label": "Review of Medical History",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "randomization",
+                    "order": 3,
+                    "label": "Randomization",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessClinical",
+                    "order": 4,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 5,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 6,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "cbc",
+                    "order": 7,
+                    "label": "CBC",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "cd4",
+                    "order": 8,
+                    "label": "CD4 Count",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                                {
+                    "taskId": "altBili",
+                    "order": 8,
+                    "label": "ALT, Total Bilirubin",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                                {
+                    "taskId": "bloodPK",
+                    "order": 8,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "day3": {
+            "order": 2,
+            "label": "Day 3",
+            "days": 3,
+            "bloodVolume": "8",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "csfCollection",
+                    "order": 3,
+                    "label": "CSF Collection and Storage",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "If CSF cultures are sterile from ≥7 days prior (i.e. culture obtained on day 3 is sterile on day 10), lumbar punctures may be deferred at day 10. Participants may be discharged from the hospital after ≥10 days, if ambulatory and clinically stable."
+
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 4,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "day6": {
+            "order": 3,
+            "label": "Day 6",
+            "days": 6,
+            "bloodVolume": "12",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "cbc",
+                    "order": 3,
+                    "label": "Complete Blood Count (CBC)",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "altBili",
+                    "order": 4,
+                    "label": "ALT, Total Bilirubin",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "csfCollection",
+                    "order": 5,
+                    "label": "CSF Collection and Storage",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "If CSF cultures are sterile from ≥7 days prior (i.e. culture obtained on day 3 is sterile on day 10), lumbar punctures may be deferred at day 10. Participants may be discharged from the hospital after ≥10 days, if ambulatory and clinically stable."
+
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 6,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "day10": {
+            "order": 4,
+            "label": "Day 10",
+            "days": 10,
+            "bloodVolume": "4",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "csfCollection",
+                    "order": 3,
+                    "label": "CSF Collection and Storage",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "If CSF cultures are sterile from ≥7 days prior (i.e. culture obtained on day 3 is sterile on day 10), lumbar punctures may be deferred at day 10. Participants may be discharged from the hospital after ≥10 days, if ambulatory and clinically stable."
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 4,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "day14": {
+            "order": 5,
+            "label": "Day 14",
+            "days": 14,
+            "bloodVolume": "12",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "cbc",
+                    "order": 3,
+                    "label": "Complete Blood Count (CBC)",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "altBili",
+                    "order": 4,
+                    "label": "ALT, Total Bilirubin",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "csfCollection",
+                    "order": 5,
+                    "label": "CSF Collection and Storage",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "If CSF cultures are sterile from ≥7 days prior (i.e. culture obtained on day 3 is sterile on day 10), lumbar punctures may be deferred at day 10. Participants may be discharged from the hospital after ≥10 days, if ambulatory and clinically stable."
+
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 6,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "week4": {
+            "order": 6,
+            "label": "Week 4",
+            "days": 28,
+            "bloodVolume": "12",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "cbc",
+                    "order": 3,
+                    "label": "Complete Blood Count (CBC)",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "altBili",
+                    "order": 4,
+                    "label": "ALT, Total Bilirubin",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "csfCollection",
+                    "order": 5,
+                    "label": "CSF Collection and Storage",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "If CSF culture is positive at the Day 14 visit, then an LP must be performed at Week 4. For those who remain culture positive thereafter, follow-up LPs should be conducted as per best practices to document sterility."
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 6,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "week6": {
+            "order": 7,
+            "label": "Week 6",
+            "days": 42,
+            "bloodVolume": "±12",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "Week 6 blood draw may be specified in the appendix dependent on duration of study medicine."
+                },
+                {
+                    "taskId": "cbc",
+                    "order": 3,
+                    "label": "Complete Blood Count (CBC)",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "Week 6 blood draw may be specified in the appendix dependent on duration of study medicine."
+
+                },
+                {
+                    "taskId": "altBili",
+                    "order": 4,
+                    "label": "ALT, Total Bilirubin",
+                    "category": "Clinical Labs",
+                    "required": true,
+                    "notes": "Week 6 blood draw may be specified in the appendix dependent on duration of study medicine."
+
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 5,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true,
+                    "notes": "Week 6 blood draw may be specified in the appendix dependent on duration of study medicine."
+
+                },
+                {
+                    "taskId": "artInitiation",
+                    "order": 6,
+                    "label": "ART Initiation / Change",
+                    "category": "Research Labs",
+                    "required": false
+                }
+            ]
+        },
+        "week8": {
+            "order": 8,
+            "label": "Week 8",
+            "days": 56,
+            "bloodVolume": "0",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                }
+            ]
+        },
+        "week10": {
+            "order": 9,
+            "label": "Week 10",
+            "days": 70,
+            "bloodVolume": "4",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "cd4",
+                    "order": 2,
+                    "label": "CD4 Count",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 3,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "week14": {
+            "order": 10,
+            "label": "Week 14",
+            "days": 98,
+            "bloodVolume": "0",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "cognitive",
+                    "order": 1,
+                    "label": "Qualitative Neurocognitive Assessment",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        },
+        "week18": {
+            "order": 11,
+            "label": "Week 18",
+            "days": 126,
+            "bloodVolume": "0",
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 1,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true,
+                    "notes": "± collection at this timpoint"
+                }
+            ]
+        },
+        "prematureDiscontinuation": {
+            "order": 12,
+            "label": "Premature Discontinuation",
+            "days": null,
+            "bloodVolume": 12,
+            "tasks": [
+                {
+                    "taskId": "assessClinical",
+                    "order": 0,
+                    "label": "Assess Clinical Status",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "assessAdverse",
+                    "order": 1,
+                    "label": "Assess Adverse Events",
+                    "category": "Procedures",
+                    "required": true
+                },
+                {
+                    "taskId": "naKCreatinine",
+                    "order": 2,
+                    "label": "Na, K, Creatinine",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "cbc",
+                    "order": 3,
+                    "label": "Complete Blood Count (CBC)",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "altBili",
+                    "order": 4,
+                    "label": "ALT, Total Bilirubin",
+                    "category": "Clinical Labs",
+                    "required": true
+                },
+                {
+                    "taskId": "bloodPK",
+                    "order": 5,
+                    "label": "Storage of Blood for PK and Research Studies",
+                    "category": "Research Labs",
+                    "required": true
+                }
+            ]
+        }
+    }
+}}
